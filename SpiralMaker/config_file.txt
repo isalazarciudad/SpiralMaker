@@ -1,0 +1,138 @@
+#CONFIGURATION FILE FOR THE GNOMO SOFTWARE
+#This file sets the values for some variables of the software display mode
+#initial conditions
+
+7       #1=apoptosis,2=cell sorting,3=invagination,4=epithelial directed growth,
+        #5=mesenchymal directed growth,6=ECM secretion,7=migration
+
+#visualization variables for the OpenGL environment
+
+0.0 0.0 6       camera initial position
+
+5.0     camera initial rotation around z axis
+170.0     camera initial rotation around x axis
+
+29        color code selection (see below for an explanation)
+1         color palette (1-3)
+0         custom colorcode (should match the color code above if you want a custom colorcode, if not leave it at 0)
+1         custom colorcode maximum
+0         custom colorcode minimum
+
+0         arrow code selection (see below for an explanation)
+1.0       arrow scale
+0         custom arrow selection (should match the color code above if you want a custom colorcode, if not leave it at 0)
+0         custom arrow maximum value
+0         custom arrow minimum value
+
+0         semitransparent shpere code selection (see below for an explanation)
+1.0       sphere scale
+0         custom sphere selection (should match the color code above if you want a custom colorcode, if not leave it at 0)
+0         custom sphere maximum value
+0         custom sphere minimum value
+
+
+
+#draw function flags (will determine what is bein displayed)
+
+1   smooth cells 
+0   3D box grid for neighboring
+0   nothing
+0   nothing
+1   nodes as spheres: radius is p^EQD
+0   nodes as spheres: radius is p^ADD
+1   nothing
+0   no spheres
+1   epithelial apical nodes
+1   epithelial basal nodes
+0   nodes as spheres: small radius
+0   connexions between cells
+0   connexions within the cell
+0   nothing
+0   nothing
+0   nothing
+0   nothing
+0   display box
+0   display cell polarization vectors 
+0   nothing 
+0   display cell centroids 
+1   epithelial nodes as cylinders
+0   nothing
+0   nothing
+0   nothing
+0   nothing
+0   nothing
+0   nothing
+0   nothing
+1   display epithelium
+1   display mesenchyme
+1   display extracellular matrix
+0   nothing
+0   nothing
+0   nothing
+1   fixed nodes (node()%hold=1)
+0   plot cell contour
+0   plot intercellular contour
+0   plot displacement of nodes respect initial conditions
+0   nothing
+
+#Preselection of nodes and cells
+
+0   Selecting nodes (=1) or cells (=2), or nothing (=0)
+
+0   Number of nodes/cells/selected
+
+
+
+
+
+###### color code options (also applies to arrows and spheres
+
+1 node position in x
+2 node position in y
+3 node postition in z
+4 node energy
+5 node p^EQD
+6 node p^AAD
+7 node p^YOU
+8 node p^ADH
+9 node p^REP
+10 node p^REPCEL
+11 node p^ER
+12 node p^EST
+13 node p^EQS
+14 node p^HOO
+15 node p^MOV
+16 node p^DMO
+17 node initial position in x
+18 node initial position in y
+19 node initial position in z
+20 node accumulated extracellular matrix
+21 node p^COD
+22 node p^GRD
+23 node p^PLD
+24 node p^VOD
+25 node p^DIF
+26 node p^KFI
+27 node p^PLA
+28 node p^VOC
+29 node type
+30 cell index
+31 epithelial node counterpart (the other one composing the cylinder
+32 cell nucleus
+33 node()%talone
+34 nodes that are fixed in space
+35 nodes that are borders of the system
+36 cell cycle progression
+37 node displacement in x
+38 node displacement in y
+39 node displacement in z
+40 node total displacement
+41 node's grid box index
+42 node index
+43 concentration of gene form 1
+44 concentration of gene form 2
+.
+.
+.
+.
+until the total number of genes
